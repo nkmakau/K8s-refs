@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: arkcomk8s-manual-v2
+  labels:
+    creation_method: manual 
+    env: prod
+  spec:
+    containers:
+    - image: noshmak/arkcomk8s
+      name: arkcomk8s
+      ports:
+      - containerPort: 8080
+        protocol: TCP
