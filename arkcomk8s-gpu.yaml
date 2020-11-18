@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: arkcomk8s-gpu
+spec:
+  nodeSelector:
+    gpu: "true"
+  containers:
+  - image: noshmak/arkcomk8s
+    name: arkcomk8s
